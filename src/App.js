@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './assets/css/App.css';
+import "bootstrap/dist/css/bootstrap.css"
+import { HeaderStyle , buttonStyle} from './styles';
+import DogImage from "./assets/image/dog.jpeg"
+const styles={
+  color:"red",
+  backgroundColor:"black",
+}
 function App() {
+  console.log(DogImage);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <button className="btn btn-primary">Click Me</button>
+      <br />
+      <button className="btn btn-secondary">Secondary button</button>
+      <img 
+        src={DogImage}
+        alt="Picture of Dog"
+        style={{height:"200px",width:"200px" ,display:"block"}}
+      />
+    </>
   );
 }
 
