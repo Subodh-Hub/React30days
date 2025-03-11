@@ -1,21 +1,27 @@
-const initialState = { count: 0 };
+const initialState = {
+  count: 0,
+};
 
-const counterReducer = (state = initialState, action) => {
+const counterReducer = (state, action) => {
   switch (action.type) {
     case "increment":
-      return { ...state, count: state.count + 1 };
+      return { count: state.count + 1 };
 
     case "decrement":
-      return { ...state, count: state.count - 1 };
+      return { count: state.count - 1 };
 
     case "reset":
-      return { ...state, count: 0 };
+      return { count: 0 };
 
-    case "increaseBy":
-        return{...state,count:state.count+action.payload}
-    case "decreaseBy":
-        return{...state,count:state.count-action.payload}
+    case "incrementByAmount":
+      return { count: state.count + action.payload };
+
+    case "decrementByAmount":
+      return { count: state.count - action.payload };
+
+    default:
+      return state;
   }
 };
 
-export { initialState, counterReducer };
+export { counterReducer, initialState };
