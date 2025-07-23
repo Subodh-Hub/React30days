@@ -22,7 +22,7 @@ function ImageSlider({
 
   return (
     <div>
-      <div className="relative max-w-[1200px] w-full h-[650px] ">
+      <div className="relative max-w-[1200px] w-full h-[650px] m-auto">
         <div className="relative w-full h-full overflow-hidden">
           {Image.map((img, index) => (
             <img
