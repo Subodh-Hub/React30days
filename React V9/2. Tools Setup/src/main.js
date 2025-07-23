@@ -15,7 +15,7 @@ const App = () => {
           name: "Pepporina Pizza",
           description: "Wow its so delicious with sausage slice pizza",
         },
-        ""
+        "",
       ),
       React.createElement(
         Pizza,
@@ -23,7 +23,7 @@ const App = () => {
           name: "Mozerilla Pizza",
           description: "Wow its so delicious with mozerilla cheese pizza",
         },
-        ""
+        "",
       ),
       React.createElement(
         Pizza,
@@ -31,7 +31,7 @@ const App = () => {
           name: "Hawain Pizza",
           description: "Wow its so delicious with pineapple topping pizza",
         },
-        ""
+        "",
       ),
     ]),
   ]);
