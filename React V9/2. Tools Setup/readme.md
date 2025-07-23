@@ -4,7 +4,7 @@ I manually set all the script inside the package-lock.json
 So inorder to run the prettier
 "npm run format"
 
-TO lint
+To lint
 "npm run lint -- --debug
 "npm run lint"
 
