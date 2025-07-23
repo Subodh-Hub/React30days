@@ -4,17 +4,27 @@
   "description": "This is my learning to setup all the essential tools for the react",
   "license": "ISC",
   "author": "Subodh Rijal",
-  "type": "module",
   "main": "main.js",
   "scripts": {
-    "lint": "eslint",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,html}\"",
+    "lint": "eslint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "type": "module",
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
     "eslint": "^9.9.1",
     "eslint-config-prettier": "^9.1.0",
     "globals": "^15.9.0",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "vite": "^5.4.2"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
