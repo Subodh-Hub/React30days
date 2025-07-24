@@ -1,0 +1,14 @@
+# node module
+node_modules/
+
+# Build
+dist/
+build/
+
+# environment variables
+.env
+
+# mac and linux hidden file
+*.swp
+*.locl
+*.bak
